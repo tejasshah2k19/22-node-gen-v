@@ -1,0 +1,104 @@
+node js 
+
+node js is an open source runtime enviornment for java script at backend side.
+
+javascript -->frontend -> browser -->
+
+how? 
+
+how javascript run in browser? 
+js engine  -> run js code in browser 
+
+each browser has their on js engine => 
+
+v8 : google
+spidermonkey : firefox 
+chakra : microsoft 
+
+
+
+developer -> c++ :: v8 --> js code --> nodejs 
+
+why v8? -> fastest 
+
+-------------------------------------------------------------------------------------
+
+500 request -> serve -> 1 thread -> [ queue : 1 2 3 4 5 .... 500 ]
+nodejs is a single thread model 
+
+nodejs use asynchronous programming 
+
+if 1 task is waiting for some io / file /db  then nodejs will not wait for that task and it execute next task. 
+
+what type app we can create using nodejs?
+webapp 
+socket 
+restapi 
+
+----------------------------------------------------------------------------
+
+how to create nodejs project?
+
+npm init 
+npm init --yes 
+
+create first.js and print some message using console and execute using node XXX.js 
+
+
+----------------------------------------------------------------------------
+
+all .js in nodejs is a module
+                            function
+                            export 
+
+
+
+----------------------------------------------------------------------------
+
+how to use import statement in node js ? alternate of require("")
+to support ES6 we need to add 
+
+type:module in package.json then we can only use ES6 not ES5 
+----------------------------------------------------------------------------
+how to connect /create web app for http 
+
+
+http -> nodejs -> basic server 
+routes 
+body
+parameter 
+get / post / delete / put 
+
+
+express -> framework of nodejs 
+
+1) http routing 
+2) json
+3) body 
+4) query 
+
+ 
+express() => http() => 
+
+
+npm install express 
+
+
+node index.js 
+i need to restart server whenerver we made any changes in js file 
+to avoid this / to get benifit hot reload or auto restart we can use nodemon module 
+nodemon is tool which detects changes in js file and it restart your server when ever changes detected. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
