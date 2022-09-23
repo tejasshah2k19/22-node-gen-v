@@ -1,29 +1,22 @@
 const express = require("express")
-const res = require("express/lib/response")
+
+const sessionController = require("./controller/session-controller")
+
 
 let app = express() 
 
+//middleware 
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 
 
-//urls
+//urls 
 
-app.get("/",function(req,res){
-    res.write("Welcome")
-    res.end()  
-})
-
-app.get("/login",function(req,res){
-    res.write("Login.........")
-    res.end();
-})
-    
-app.get("/signup",function(req,res){
-    res.send("signup")
-})
+app.post("/signup",sessionController.signup)
 
 
+let port = 9999 
 
-let port = 9999
 app.listen(port,function(){
-    console.log("server started..."+port);
-})    
+    console.log("Server started ... "+port);
+})
