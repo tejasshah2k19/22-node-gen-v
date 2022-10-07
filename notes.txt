@@ -89,11 +89,74 @@ i need to restart server whenerver we made any changes in js file
 to avoid this / to get benifit hot reload or auto restart we can use nodemon module 
 nodemon is tool which detects changes in js file and it restart your server when ever changes detected. 
 
+----------------------------------------------------------------------------
+mongodb 
+
+schema less:-
+user
+  1) fn ln email 80
+  2) fn ln 
+  3) fn em pwd 
+
+cloud:-
+
+
+scale :- 
+user:{
+
+    "123":{
+         fn:"ram",
+         order:{
+
+
+         }
+
+    }
+}
 
 
 
 
 
+table :=>  collection
+record : raw : =>  document
+
+--------------------------------------------
+
+mongod 
+
+
+bin 
+  mongod 
+  mongo 
+
+
+methods() -> 
+
+---------------------------------------------------- 
+
+node -> mongodb -> 
+
+mongoose -> 
+    1) ORM 
+
+    mongodb collection ->   model
+
+    model object -> save()
+
+    table -> users --> map -> UserEntity -> class - > object -> save 
+
+  2) db connection 
+
+  3) noSql -> schemaLess -> Schema { fn ln em pwd }
+
+  users -> fn ln 
+           fn ln email 
+           firstName ln email 
+           fn ln email password 
+
+install mongoose lib npm 
+---------------------------------------------------- 
 
 
 
