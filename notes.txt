@@ -158,7 +158,18 @@ mongoose ->
 install mongoose lib npm 
 ---------------------------------------------------- 
 
+mongoose -> model -> 
+  schema-> model -> crud  | query 
 
+
+//pk ObjectId => 12 byte 
+//4 ->  timestamp 
+//5 ->  system ps unique value 
+//3 ->  counter 
+
+__v
+createdAt
+updatedAt 
 
 
 
