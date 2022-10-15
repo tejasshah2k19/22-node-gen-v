@@ -173,6 +173,6 @@ updatedAt
 
 
 
-
+npm i cors 
 
 
