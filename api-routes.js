@@ -11,6 +11,10 @@ router.post("/signup",SessionController.signup)
 router.get("/users",UserController.getAllUsers)
 router.get("/users/:userId",UserController.getUserById) 
 router.post("/users",UserController.getUserByEmail)
+router.get("/admins",UserController.getAllAdmins)
+router.post("/admin",UserController.addAdmin)
+router.get("/customers",UserController.getAllCustomers)
+
 
 router.post("/role",RoleController.saveRole)
 router.get("/role/:roleId",RoleController.getRoleById)

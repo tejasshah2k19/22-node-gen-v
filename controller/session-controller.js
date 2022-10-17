@@ -8,6 +8,7 @@ function signup(req, res) {
     let email = req.body.email
     let password = req.body.password
     let lastName = req.body.lastName
+    let role = "634a993e739c8cc42db5ab45" //req.body.role 
     let errors = {}
     let isError = false
 
@@ -38,7 +39,8 @@ function signup(req, res) {
             "firstName":firstName,
             "lastName":lastName,
             "email":email,
-            "password":password
+            "password":password,
+            "role":role
         })
         user.save(function (err, success) {
             if (err) {

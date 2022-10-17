@@ -174,5 +174,16 @@ updatedAt
 
 
 npm i cors 
+------------------------------------------------------
+join in nodejs 
 
+1) child model have field of parent with ObjectID as data type 
+2) also add ref with parent model 
+  code in child table:- 
+      role:{
+          type:mongoose.Schema.Types.ObjectId,
+          ref:"role"
+      }
 
+3) for join query in mongo we have populate() to read join table records 
+------------------------------------------------------
